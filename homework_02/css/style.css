@@ -96,7 +96,7 @@ a:focus{color:#666;outline:0}ul{padding:0;margin:0}body{background-color:#f2f2f2
         content: ".";
     }
 
-    li a.text::after {
+    section.pad li:nth-child(-n+3):nth-child(odd)::after {
         content: "New";
         vertical-align: super;
         color: red;
@@ -168,4 +168,9 @@ a:focus{color:#666;outline:0}ul{padding:0;margin:0}body{background-color:#f2f2f2
     .tm-main-content {
         margin: 75px auto 0;
     }
+
+    .tm-nav-item:nth-child(-n+3) {
+        border-bottom: none;
+    }
+
 }
