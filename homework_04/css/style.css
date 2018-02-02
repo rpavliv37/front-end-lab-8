@@ -1,0 +1,242 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+}
+
+.email-btn {
+  background-color: #000;
+  padding: 0 6px;
+  color: #fff;
+}
+
+header {
+  background-image: url(../img/apples.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+header .header-content {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 500px;
+  justify-items: center;
+  align-items: start;
+}
+header .header-content .logo-small {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-left: 100px;
+  justify-self: stretch;
+}
+header .header-content li {
+  display: inline-block;
+  font-size: 15px;
+}
+header .header-content li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 50px;
+}
+header .header-content li a::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  background-color: #B7C8D9;
+  transition: all 0.3s;
+  margin-top: 6px;
+}
+header .header-content li a:hover::after {
+  transform: scaleX(1);
+}
+header .header-banner {
+  grid-column: 1 / 3;
+  align-self: start;
+}
+header .header-banner h1 {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 5px;
+  font-size: 50px;
+  margin-bottom: 0;
+  position: relative;
+}
+header .header-banner h1 span:first-child {
+  font-size: 90px;
+}
+header .header-banner h1 span:nth-child(2) {
+  font-size: 45%;
+  display: inline-block;
+  position: absolute;
+  top: 41%;
+}
+header .header-banner p {
+  margin-top: 0;
+  text-align: center;
+  color: #fff;
+  font-size: small;
+}
+header .header-banner .btn {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #f4f4f4;
+  padding: 20px 80px;
+  font-size: small;
+  background-color: #343638;
+  opacity: .80;
+  margin: 150px;
+}
+
+.about-section {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 80px 90px;
+}
+.about-section p:first-child {
+  font-size: 20px;
+}
+.about-section p:nth-child(2) {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.shop-section {
+  padding: 90px;
+  background-color: #F4F4F4;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.shop-section h2 {
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 50px;
+  grid-column: 1 /-1;
+}
+.shop-section div:nth-child(2) {
+  grid-column: 1/3;
+  background-image: url(../img/sample.jpg);
+}
+.shop-section div:nth-child(n+3):nth-child(-n+4) {
+  background-image: url(../img/sample2.jpg);
+}
+.shop-section div:nth-child(5) {
+  grid-column: 2 /4;
+  background-image: url(../img/sample3.jpg);
+}
+.shop-section div:nth-child(6) {
+  margin: 60px 0 80px 0;
+  background-color: #fff;
+  padding: 30px 100px;
+  grid-column: 1 / -1;
+  grid-template-columns: 2fr 2fr 1fr;
+}
+.shop-section div:nth-child(6) p {
+  justify-self: center;
+}
+.shop-section div:nth-child(6) input {
+  border: 1px solid #000;
+}
+.shop-section .large-placeholder {
+  background-color: #F4F4F4;
+  padding: 0 30px;
+}
+.shop-section .large-placeholder::placeholder {
+  color: #000;
+}
+.shop-section .shop-item {
+  min-height: 40vh;
+  background-size: cover;
+  background-position: center;
+  padding: 15px;
+  color: #fff;
+  border: 1px solid #fff;
+  position: relative;
+  box-shadow: inset 3px -43px 48px -11px rgba(52, 54, 56, 0.44);
+}
+.shop-section .shop-item span:first-child {
+  align-self: start;
+  justify-self: end;
+  padding: 11px;
+  border: 2px solid #fff;
+  background-color: #343638;
+  opacity: .80;
+  position: absolute;
+  top: 5%;
+  right: 15px;
+}
+.shop-section .shop-item span:first-child a {
+  text-decoration: none;
+  color: #fff;
+}
+.shop-section .shop-item span:nth-child(2) {
+  align-self: end;
+}
+
+.vacancies-section {
+  padding: 90px 90px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 40px;
+  color: #9e9e9e;
+}
+.vacancies-section h3 {
+  color: #000;
+}
+.vacancies-section .contact-info {
+  line-height: 35px;
+  margin: 10px 0;
+}
+.vacancies-section .email-btn {
+  padding: 13px 5px;
+  border: 1px solid #000;
+}
+.vacancies-section .small-placeholder {
+  padding: 13px 10px;
+  background-color: #F4F4F4;
+  font-style: italic;
+  color: #000;
+  border: 1px solid #000;
+}
+.vacancies-section .time-ago {
+  color: #e8e8e8;
+}
+.vacancies-section .small-inputs {
+  grid-template-columns: 1fr 1fr;
+}
+
+hr {
+  width: 86%;
+  background-color: #F4F4F4;
+  border: none;
+  height: 2px;
+}
+
+footer {
+  padding: 0 90px;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer nav {
+  justify-self: end;
+}
+footer li {
+  display: inline-block;
+  margin-left: 30px;
+}
+footer li a {
+  text-decoration: none;
+  color: #000;
+}
+footer p {
+  color: #9e9e9e;
+}
+
+/*# sourceMappingURL=main.css.map */
