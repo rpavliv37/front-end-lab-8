@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font: 14px/1.2 Arial, Helvetica, sans-serif;
 }
 
 .grid {
@@ -25,7 +25,6 @@ header nav li a {
   color: #333;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 15px;
 }
 header nav li a:hover {
   color: #38c2d7;
@@ -40,7 +39,6 @@ header .header-banner h1 {
   padding: 20px 56% 100px 150px;
   color: #fff;
   font-weight: normal;
-  font-size: 40px;
 }
 
 section {
@@ -58,12 +56,10 @@ section a:hover {
   background-color: #38c2d7;
 }
 section h3 {
-  font-size: 14px;
   margin-bottom: 0;
 }
 section p {
   margin-top: 7px;
-  font-size: 12px;
 }
 section img {
   max-width: 100%;
@@ -72,26 +68,24 @@ section img {
 }
 
 footer {
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr 1fr;
   background-color: #38c2d7;
   color: #fff;
   padding: 10px 150px;
-  font-size: 12px;
 }
-footer nav {
+
+footer ul {
+  padding: 0;
   align-self: start;
 }
-footer nav ul {
-  padding: 0;
-}
-footer nav li {
+footer li {
   display: inline-block;
   margin-right: 10px;
 }
-footer nav li a {
+footer li a {
   color: #fff;
 }
-footer nav li a:hover {
+footer li a:hover {
   text-decoration: none;
 }
 
@@ -112,7 +106,6 @@ footer nav li a:hover {
   }
   header .header-banner h1 {
     padding: 30px 95px 250px 95px;
-    font-size: 32px;
     justify-self: stretch;
     text-align: center;
   }
@@ -154,7 +147,6 @@ footer nav li a:hover {
     background-color: #39c2d7;
     margin: 200px 20px 20px 20px;
     padding: 10px 5px 10px 5px;
-    font-size: 19px;
     font-weight: bold;
   }
 
@@ -168,11 +160,11 @@ footer nav li a:hover {
   footer {
     padding: 0;
   }
-  footer nav li {
+  footer li {
     display: block;
     margin: 5px;
   }
-  footer nav li a:hover {
+  footer li a:hover {
     text-decoration: underline;
   }
 }
