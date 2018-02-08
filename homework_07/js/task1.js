@@ -1,6 +1,6 @@
 var floors = Number(prompt("enter natural number from 1 to 20", 1));
 var brick = '';
-if (isNaN(floors) || floors <= 0 || floors > 20) {
+if (isNaN(floors) || floors % 1 != 0 || floors <= 0 || floors > 20) {
     console.log('Incorrect!')
 } else {
     for (var i = 1; i <= floors; i++) {
