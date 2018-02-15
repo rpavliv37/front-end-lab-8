@@ -1,4 +1,4 @@
-function reverseNumber (n) {
-	const reversed = n.toString().split('').reverse().join(''); 
-	return reversed * Math.sign(n);
+let reverseNumber = (n) => {
+    const reversed = n.toString().split('').reverse().join('');
+    return parseInt(reversed) * Math.sign(n);
 }

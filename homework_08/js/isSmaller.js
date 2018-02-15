@@ -1,3 +1,2 @@
-function isBigger (a, b) {
-	return (b > a);
-}
+let isBigger  = (a, b) => (a > b);
+let isSmaller = (a, b) => isBigger(b,a);
