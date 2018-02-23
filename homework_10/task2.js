@@ -44,8 +44,6 @@ function fighter(info) {
     }
 }
 
-
-
 let fighter1 = fighter({ name: 'John', attack: 100, hp: 100 });
 let fighter2 = fighter({ name: 'Kayn', attack: 50, hp: 300 });
 let fighter3 = fighter({ name: 'Bill', attack: 40, hp: 100 });
